@@ -118,8 +118,8 @@ services:
     image: grafana/grafana:10.4.2 # Pinned version for stability
     container_name: telemetry_grafana
     restart: unless-stopped
-    ports:
-      - "3000:3000"
+#    ports:
+#      - "3000:3000"
     environment:
       # --- Grafana Admin User ---
       GF_SECURITY_ADMIN_USER: admin
